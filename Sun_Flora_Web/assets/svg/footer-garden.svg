@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" preserveAspectRatio="none" width="100%" height="100%" class="panoramic-garden-artwork" aria-label="Taman Bunga Matahari dan Marigold">
+  <defs>
+    <radialGradient id="ft-sf-petal" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFF59D" />
+      <stop offset="60%" stop-color="#FFD447" />
+      <stop offset="100%" stop-color="#FFA000" />
+    </radialGradient>
+    <radialGradient id="ft-mg-petal" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#F28C28" />
+      <stop offset="100%" stop-color="#D84315" />
+    </radialGradient>
+    <linearGradient id="ft-stem" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#789B59" />
+      <stop offset="100%" stop-color="#315C3A" />
+    </linearGradient>
+    <style>
+      @keyframes ftBloom {
+        0% { transform: scale(0.2); opacity: 0; }
+        65% { transform: scale(1.12); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      @keyframes ftStem {
+        0% { transform: scaleY(0); }
+        100% { transform: scaleY(1); }
+      }
+      @keyframes ftSway {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(2.4deg); }
+      }
+      .bloom-target {
+        animation: ftBloom 1.2s cubic-bezier(0.16, 1.2, 0.3, 1) forwards;
+      }
+      .stem-target {
+        animation: ftStem 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .sway-leaves {
+        animation: ftSway 6s ease-in-out infinite;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .bloom-target, .stem-target, .sway-leaves { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <!-- Ground Mound Soil Line -->
+  <path d="M 0 240 L 0 200 Q 300 180 600 195 T 1200 190 L 1200 240 Z" fill="#4A342B" />
+  <path d="M 0 205 Q 300 185 600 200 T 1200 195" fill="none" stroke="#789B59" stroke-width="6" opacity="0.4" />
+
+  <!-- Background Smaller Flowers (Taller stems) -->
+  <!-- Plant 1: Tall Sunflower left-center -->
+  <g class="stem-target sway-leaves" style="transform-origin: 220px 240px; animation-duration: 7s;">
+    <path d="M 220 220 Q 215 130 220 60" fill="none" stroke="url(#ft-stem)" stroke-width="7" stroke-linecap="round" />
+    <!-- Leaf -->
+    <path d="M 218 140 C 190 130 170 110 160 90 C 185 95 205 115 218 130" fill="#789B59" />
+    <!-- Sunflower Head -->
+    <g class="bloom-target" style="transform-origin: 220px 60px;">
+      <circle cx="220" cy="60" r="38" fill="url(#ft-sf-petal)" />
+      <circle cx="220" cy="60" r="18" fill="#4E342E" stroke="#795548" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- Plant 2: Tall Marigold right-center -->
+  <g class="stem-target sway-leaves" style="transform-origin: 880px 240px; animation-duration: 6.2s; animation-delay: -1.5s;">
+    <path d="M 880 220 Q 885 140 880 75" fill="none" stroke="url(#ft-stem)" stroke-width="7" stroke-linecap="round" />
+    <path d="M 882 150 C 910 140 930 120 940 100 C 915 105 895 125 882 140" fill="#789B59" />
+    <!-- Marigold Head -->
+    <g class="bloom-target" style="transform-origin: 880px 75px;">
+      <circle cx="880" cy="75" r="32" fill="url(#ft-mg-petal)" />
+      <circle cx="880" cy="75" r="16" fill="#F28C28" />
+      <circle cx="880" cy="75" r="7" fill="#FFD54F" />
+    </g>
+  </g>
+
+  <!-- Plant 3: Far Left Sunflower -->
+  <g class="stem-target sway-leaves" style="transform-origin: 80px 240px; animation-duration: 5.8s;">
+    <path d="M 80 220 Q 75 160 80 110" fill="none" stroke="url(#ft-stem)" stroke-width="6" stroke-linecap="round" />
+    <g class="bloom-target" style="transform-origin: 80px 110px;">
+      <circle cx="80" cy="110" r="30" fill="url(#ft-sf-petal)" />
+      <circle cx="80" cy="110" r="14" fill="#4E342E" />
+    </g>
+  </g>
+
+  <!-- Plant 4: Middle Center Sunflower -->
+  <g class="stem-target sway-leaves" style="transform-origin: 540px 240px; animation-duration: 6.8s; animation-delay: -3s;">
+    <path d="M 540 220 Q 538 120 540 50" fill="none" stroke="url(#ft-stem)" stroke-width="8" stroke-linecap="round" />
+    <!-- Leaf pair -->
+    <path d="M 539 125 C 505 115 480 90 470 65 C 500 70 525 95 539 115" fill="#789B59" />
+    <path d="M 541 150 C 575 140 600 115 610 90 C 580 95 555 120 541 140" fill="#789B59" />
+    <!-- Sunflower Head -->
+    <g class="bloom-target" style="transform-origin: 540px 50px;">
+      <circle cx="540" cy="50" r="44" fill="url(#ft-sf-petal)" />
+      <circle cx="540" cy="50" r="22" fill="#4E342E" stroke="#795548" stroke-width="3" />
+      <circle cx="540" cy="50" r="10" fill="#3E2723" />
+    </g>
+  </g>
+
+  <!-- Plant 5: Far Right Sunflower -->
+  <g class="stem-target sway-leaves" style="transform-origin: 1100px 240px; animation-duration: 5.5s; animation-delay: -2s;">
+    <path d="M 1100 220 Q 1105 150 1100 95" fill="none" stroke="url(#ft-stem)" stroke-width="6" stroke-linecap="round" />
+    <g class="bloom-target" style="transform-origin: 1100px 95px;">
+      <circle cx="1100" cy="95" r="32" fill="url(#ft-sf-petal)" />
+      <circle cx="1100" cy="95" r="15" fill="#4E342E" />
+    </g>
+  </g>
+
+  <!-- Foreground Dense Marigolds and Small Blooming Wildflowers -->
+  <!-- Marigold Left 1 -->
+  <g class="stem-target sway-leaves" style="transform-origin: 360px 240px; animation-duration: 5.2s; animation-delay: -0.8s;">
+    <path d="M 360 220 Q 362 170 360 120" fill="none" stroke="url(#ft-stem)" stroke-width="6" stroke-linecap="round" />
+    <g class="bloom-target" style="transform-origin: 360px 120px;">
+      <circle cx="360" cy="120" r="28" fill="url(#ft-mg-petal)" />
+      <circle cx="360" cy="120" r="14" fill="#F28C28" />
+    </g>
+  </g>
+
+  <!-- Marigold Center-Right -->
+  <g class="stem-target sway-leaves" style="transform-origin: 720px 240px; animation-duration: 6.4s;">
+    <path d="M 720 220 Q 718 165 720 115" fill="none" stroke="url(#ft-stem)" stroke-width="6" stroke-linecap="round" />
+    <g class="bloom-target" style="transform-origin: 720px 115px;">
+      <circle cx="720" cy="115" r="29" fill="url(#ft-mg-petal)" />
+      <circle cx="720" cy="115" r="15" fill="#F28C28" />
+    </g>
+  </g>
+
+  <!-- Small Blooming Wildflowers at Ground Level (Little sprouts) -->
+  <g class="bloom-target" style="transform-origin: 40px 190px;">
+    <circle cx="40" cy="190" r="8" fill="#FFD447" />
+    <circle cx="40" cy="190" r="3.5" fill="#795548" />
+  </g>
+  <g class="bloom-target" style="transform-origin: 150px 185px;">
+    <circle cx="150" cy="185" r="10" fill="#F28C28" />
+    <circle cx="150" cy="185" r="4" fill="#FFD447" />
+  </g>
+  <g class="bloom-target" style="transform-origin: 290px 188px;">
+    <circle cx="290" cy="188" r="9" fill="#FFD447" />
+    <circle cx="290" cy="188" r="3.5" fill="#795548" />
+  </g>
+  <g class="bloom-target" style="transform-origin: 450px 184px;">
+    <circle cx="450" cy="184" r="11" fill="#F28C28" />
+    <circle cx="450" cy="184" r="5" fill="#FFE082" />
+  </g>
+  <g class="bloom-target" style="transform-origin: 640px 186px;">
+    <circle cx="640" cy="186" r="10" fill="#FFD447" />
+    <circle cx="640" cy="186" r="4" fill="#795548" />
+  </g>
+  <g class="bloom-target" style="transform-origin: 800px 185px;">
+    <circle cx="800" cy="185" r="11" fill="#F28C28" />
+    <circle cx="800" cy="185" r="4.5" fill="#FFE082" />
+  </g>
+  <g class="bloom-target" style="transform-origin: 990px 188px;">
+    <circle cx="990" cy="188" r="9" fill="#FFD447" />
+    <circle cx="990" cy="188" r="3.5" fill="#795548" />
+  </g>
+  <g class="bloom-target" style="transform-origin: 1160px 186px;">
+    <circle cx="1160" cy="186" r="10" fill="#F28C28" />
+    <circle cx="1160" cy="186" r="4" fill="#FFD447" />
+  </g>
+</svg>

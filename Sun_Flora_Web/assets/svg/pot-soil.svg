@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%" height="100%" class="pot-soil-artwork" aria-label="Pot dan Media Tanam">
+  <defs>
+    <linearGradient id="guide-pot-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97746" />
+      <stop offset="50%" stop-color="#F28C5E" />
+      <stop offset="100%" stop-color="#B85D30" />
+    </linearGradient>
+    <linearGradient id="guide-soil-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6D4C41" />
+      <stop offset="100%" stop-color="#3E2723" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Side: Terracotta Pot -->
+  <g transform="translate(60, 40)">
+    <ellipse cx="60" cy="160" rx="50" ry="10" fill="#795548" opacity="0.2" />
+    <!-- Soil mound in pot -->
+    <ellipse cx="60" cy="50" rx="46" ry="14" fill="#3E2723" />
+    <!-- Pot rim -->
+    <ellipse cx="60" cy="46" rx="55" ry="12" fill="#E27341" stroke="#A9481E" stroke-width="2" />
+    <!-- Pot body -->
+    <path d="M 12 50 L 25 145 C 26 155 45 160 60 160 C 75 160 94 155 95 145 L 108 50" fill="url(#guide-pot-grad)" stroke="#A9481E" stroke-width="2" />
+    <!-- Clean botanical accent -->
+    <circle cx="60" cy="100" r="14" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.6" />
+    <path d="M 60 92 L 60 108 M 52 100 L 68 100" stroke="#FFFFFF" stroke-width="2" opacity="0.6" />
+  </g>
+
+  <!-- Middle: Mixing arrow / Plus -->
+  <g transform="translate(185, 110)">
+    <circle cx="15" cy="15" r="18" fill="#FFF8E7" stroke="#789B59" stroke-width="2" />
+    <path d="M 15 7 L 15 23 M 7 15 L 23 15" stroke="#789B59" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Right Side: Soil & Compost Pile / Bag -->
+  <g transform="translate(240, 45)">
+    <ellipse cx="60" cy="155" rx="55" ry="12" fill="#795548" opacity="0.2" />
+    <!-- Soil Pile with Compost Specks -->
+    <path d="M 10 150 C 15 90 40 70 60 70 C 80 70 105 90 110 150 Z" fill="url(#guide-soil-grad)" />
+    <!-- Compost organic leaves and flecks -->
+    <circle cx="45" cy="120" r="3" fill="#8D6E63" />
+    <circle cx="75" cy="110" r="2.5" fill="#A1887F" />
+    <circle cx="60" cy="135" r="3.5" fill="#5D4037" />
+    <circle cx="35" cy="140" r="2" fill="#8D6E63" />
+    <circle cx="85" cy="138" r="2.5" fill="#A1887F" />
+    <!-- Organic leaf sprout in compost -->
+    <path d="M 60 70 Q 56 50 60 40 Q 64 50 60 70" fill="#789B59" stroke="#315C3A" stroke-width="1.5" />
+    <ellipse cx="54" cy="48" rx="6" ry="3.5" fill="#789B59" transform="rotate(-30 54 48)" />
+    <ellipse cx="66" cy="48" rx="6" ry="3.5" fill="#789B59" transform="rotate(30 66 48)" />
+  </g>
+</svg>

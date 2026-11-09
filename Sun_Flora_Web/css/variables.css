@@ -1,0 +1,51 @@
+:root {
+  /* Brand Palette */
+  --sunflower-yellow: #FFD447;
+  --marigold-orange: #F28C28;
+  --soft-cream: #FFF8E7;
+  --leaf-green: #789B59;
+  --dark-green: #315C3A;
+  --warm-brown: #795548;
+
+  /* Extended Harmonious Tones */
+  --sunflower-light: #FFEAA0;
+  --marigold-soft: #FDE8D4;
+  --cream-card: #FFFFFF;
+  --cream-surface: #FFFDF9;
+  --cream-border: #EFE4CC;
+  --leaf-green-light: #EBF3E4;
+  --dark-green-muted: #24442A;
+  --warm-brown-light: #A57E70;
+  --text-primary: #2B2621;
+  --text-secondary: #5F5950;
+  --text-muted: #8A8175;
+
+  /* Translucent Overlays */
+  --sunflower-alpha-20: rgba(255, 212, 71, 0.2);
+  --marigold-alpha-15: rgba(242, 140, 40, 0.15);
+  --green-alpha-15: rgba(120, 155, 89, 0.15);
+  --dark-green-alpha-10: rgba(49, 92, 58, 0.1);
+  --shadow-warm: 0 10px 30px -8px rgba(121, 85, 72, 0.12), 0 4px 12px -2px rgba(49, 92, 58, 0.06);
+  --shadow-hover: 0 18px 40px -10px rgba(121, 85, 72, 0.2), 0 8px 20px -4px rgba(242, 140, 40, 0.15);
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.04);
+
+  /* Typography */
+  --font-heading: 'Fraunces', 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Border Radii */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-normal: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --container-max: 1140px;
+  --nav-height: 72px;
+}
